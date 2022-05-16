@@ -1,3 +1,5 @@
+/*-------------------------RESET*/
+
 *{
     margin: 0;
     padding: 0%;
@@ -5,17 +7,75 @@
 }
 
 a{
-    
-    
-}
+    text-decoration: none;   
+    color: black; 
 
+}
+h1{
+    font-size: 72px;
+    margin: 30px auto;
+}
 /*-------------------------HEADER*/
 
 header{
+    padding: 0 20px;
     height: 80px;
     background-color: #FFFFFF;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid red;
 }
+header a{
+    margin: 10px;
+}
+.blue-button{
+    background-color: #275FF6;
+    display: inline;
+    border-radius: 1px;
+    color: #FFFFFF;
+    padding: 5px 10px;
+}
+
+/*-------------------------MAIN*/
+/*INTRO*/
+main{
+}
+.intro{
+    background-color: #B9CFE5;
+}
+.intro-container{
+    width: 1000px;
+    padding: 10px 0;
+    margin: 0 auto;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+}
+.intro-content{
+    display: flex;
+    width: 100%;
+}
+.intro-text{
+    height: 300px;
+    width: 30%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.intro-img{
+    width: 70%;
+    position: relative;
+}
+.intro-img img{
+    position: absolute;
+    width: 700px;
+}
+.arrow{
+    font-size: 72px;
+}
+/*BUSINESS-OPPORTUNITY*/
+
+
+/*-------------------------FOOTER*/
