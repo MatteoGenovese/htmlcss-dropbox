@@ -1,43 +1,84 @@
 /*-------------------------RESET*/
 
-*{
+* {
     margin: 0;
     padding: 0%;
     box-sizing: border-box;
 }
 
-a{
-    text-decoration: none;   
-    color: black; 
+a {
+    text-decoration: none;
+    color: black;
 
 }
-h1{
+
+h1 {
     font-size: 4em;
     margin: 30px auto;
 }
-h2{
+
+h2 {
     font-size: 3em;
 }
-.container{
+
+h3 {
+    font-size: 1.5em;
+}
+
+.container {
     width: 800px;
     margin: 0 auto;
 }
+
+/*-------------------------FLEX-CLASS*/
+
+.flex-container-h {
+    display: flex;
+    row-gap: 20px
+}
+
+.flex-container-v {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px
+
+}
+
+.flex-sb {
+    justify-content: space-between;
+}
+
+.flex-align-center {
+    align-content: center;
+    align-items: center;
+}
+.flex-end{
+    justify-content: flex-end;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+
 /*-------------------------HEADER*/
 
-header{
+header {
     padding: 0 20px;
     height: 80px;
     background-color: #FFFFFF;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    box-shadow: 0px 0px 1px black;
 }
-header a{
+
+header a {
     margin: 10px;
 }
-.blue-button{
+
+.blue-button {
     background-color: #275FF6;
-    display: inline;
+    display:inline-block;
     border-radius: 1px;
     color: #FFFFFF;
     padding: 5px 10px;
@@ -45,112 +86,171 @@ header a{
 
 /*-------------------------MAIN*/
 /*INTRO*/
-main{
+main {
+    padding-top: 80px;
 }
-.intro{
+
+.intro {
     background-color: #B9CFE5;
 }
-.intro-container{
+
+.intro-container {
     width: 1000px;
-    padding: 10px 0;
     margin: 0 auto;
-    display: flex;
-    align-content: center;
-    flex-direction: column;
 }
-.intro-content{
-    display: flex;
+
+.intro-content {
     width: 100%;
 }
-.intro-text{
+
+.intro-text {
     height: 300px;
     width: 30%;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
-.intro-img{
+.intro-img {
     width: 70%;
     position: relative;
 }
-.intro-img img{
+
+.intro-img img {
     position: absolute;
     width: 100%;
 }
-.arrow{
+
+.arrow {
     font-size: 72px;
 }
+
 /*BUSINESS-OPPORTUNITY*/
-.business-opportunity{
-margin-top: 120px;
+.business-opportunity {
+    margin-top: 120px;
 }
 
-.find-your-plan-fee{
-    display: flex;
+.find-your-plan-fee {
 }
-.find-your-plan-fee div{
+
+.find-your-plan-fee div {
     margin: 20px 20px;
 }
-.monthly-fee span{
+
+.monthly-fee span {
     height: 20px;
     width: 20px;
     border-radius: 50%;
     border: 1px solid black;
     display: inline-block;
-    vertical-align:middle;
+    vertical-align: middle;
 }
-.annual-fee span{
+
+.annual-fee span {
     height: 20px;
     width: 20px;
     border-radius: 50%;
     border: 1px solid black;
     display: inline-block;
-    vertical-align:middle;
+    vertical-align: middle;
 
 }
-.monthly-fee:hover span{
+
+.monthly-fee:hover {
+    cursor: pointer;
+
+}
+
+.annual-fee:hover {
+    cursor: pointer;
+
+}
+
+.monthly-fee:hover span {
     height: 20px;
     width: 20px;
     border-radius: 50%;
     border: 6px solid blue;
     display: inline-block;
+    cursor: pointer;
+
 }
-.annual-fee:hover span{
+
+.annual-fee:hover span {
     height: 20px;
     width: 20px;
     border-radius: 50%;
     border: 6px solid blue;
     display: inline-block;
+    cursor: pointer;
 }
 
-.business-plan-list{
+.business-plan-list {
     margin-top: 40px;
-    display: flex;
 }
-.business-plan-vertical-box{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 400px;
-    width: calc( 100% / 3);
-    margin: 0 10px;
+
+.business-plan-vertical-box {
+    min-height: 700px;
     border: 1px solid black;
 }
 
-.box-container{
+.box-container {
     width: 90%;
+    margin: 0 auto;
 }
-.business-plan-title{
+
+.business-plan-title {
     border-bottom: 1px solid black;
-    display: flex;
-    justify-content: center;
+    text-align: center;
+    vertical-align: middle;
 }
-.business-plan-vertical-box div{
+
+.business-plan-vertical-box div {
     flex-grow: 1;
 }
 
+.specification div {
+    margin-top: 16px;
+}
+
+.day-of-trial {
+    margin: 0 auto;
+}
+
+.business-plan-name {
+}
+
+.business-plan-title {
+    text-align: center;
+}
+
+.user-quantity::before {
+    content: '\f007 ';
+}
+
+.memory-storage::before {
+    content: '\f07b ';
+}
+
+.added-functions::before {
+    content: '\f1e0 ';
+}
+
+.business-plan-horizontal-box {
+    height: 200px;
+    margin: 20px 10px;
+    border: 1px solid black;
+}
+
+.center{
+    margin: 0px auto;
+}
+
+.columns-div-x3{
+    width: calc( 100% / 3 - 10px * 2);
+    margin: 0 10px;
+}
+.columns-div-x1{
+    width: 100%;
+    margin: 0 10px;
+}
 
 
 
