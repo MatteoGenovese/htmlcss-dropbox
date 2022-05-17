@@ -55,8 +55,15 @@ h3 {
 .flex-end{
     justify-content: flex-end;
 }
+.flex-center{
+    justify-content:center;
+}
 .flex-wrap{
     flex-wrap: wrap;
+}
+
+.vertical-center{
+    vertical-align: middle;
 }
 
 
@@ -270,13 +277,15 @@ main {
     height: calc( 100% / 2 );
 }
 .central-customer, .side-customers{
-    width: calc( 100vw / 3 );
+    width: calc( 100% / 3 );
     height: calc( 100vw / 3 );
     background-color: #F5F5F5;
 
 }
-
-.costumers-box{
+.customer{
+    row-gap: 0px;
+}
+.customers-box{
     row-gap: 0px;
 }
 .side-customers{
@@ -307,6 +316,22 @@ main {
 .box-8{
     background-color:#FFD830;
 }
+.banner-orizzontale{
+    background-color:#B4D0E7;
+    width: 100%;
+    height: calc( 100vw / 3 * 0.75);
+    row-gap: 0px;
+}
+.row-gap-0{
+    row-gap: 0px;
+}
+.faq-questions{
+    height: calc( 100vw / 18 );
+    border-bottom: 1px solid black;
+}
+.faq-box div:first-child{
+    border-top: 1px solid black;
 
+}
 
 /*-------------------------FOOTER*/
