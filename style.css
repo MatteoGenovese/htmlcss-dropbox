@@ -32,23 +32,23 @@ h3 {
 
 /*-------------------------FLEX-CLASS*/
 
-.flex-container-h {
+.flex-container-h{
     display: flex;
     row-gap: 20px
 }
 
-.flex-container-v {
+.flex-container-v{
     display: flex;
     flex-direction: column;
     row-gap: 20px
 
 }
 
-.flex-sb {
+.flex-sb{
     justify-content: space-between;
 }
 
-.flex-align-center {
+.flex-align-center{
     align-content: center;
     align-items: center;
 }
@@ -78,9 +78,18 @@ header a {
 
 .blue-button {
     background-color: #275FF6;
-    display:inline-block;
+    display:inline;
     border-radius: 1px;
     color: #FFFFFF;
+    padding: 5px 10px;
+}
+
+.white-button {
+    background-color: #FFFFFF;
+    display:inline;
+    border: 1px solid black;
+    border-radius: 1px;
+    color: black;
     padding: 5px 10px;
 }
 
@@ -182,10 +191,6 @@ main {
     cursor: pointer;
 }
 
-.business-plan-list {
-    margin-top: 40px;
-}
-
 .business-plan-vertical-box {
     min-height: 700px;
     border: 1px solid black;
@@ -212,13 +217,6 @@ main {
 
 .day-of-trial {
     margin: 0 auto;
-}
-
-.business-plan-name {
-}
-
-.business-plan-title {
-    text-align: center;
 }
 
 .user-quantity::before {
@@ -251,7 +249,20 @@ main {
     width: 100%;
     margin: 0 10px;
 }
+.columns-div-x2{
+    width: 50%;
+    margin: 0 10px;
+}
+.drop-box-partner img {
+    width: 100%;
+}
 
+.operations-vertical-box div {
+    flex-grow: 1;
+}
 
+.operations-img img{
+    width: 100%;
+}
 
 /*-------------------------FOOTER*/
