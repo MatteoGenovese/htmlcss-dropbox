@@ -265,4 +265,48 @@ main {
     width: 100%;
 }
 
+.little-box{
+    width: calc( 100% / 2 );
+    height: calc( 100% / 2 );
+}
+.central-customer, .side-customers{
+    width: calc( 100vw / 3 );
+    height: calc( 100vw / 3 );
+    background-color: #F5F5F5;
+
+}
+
+.costumers-box{
+    row-gap: 0px;
+}
+.side-customers{
+    row-gap: 0px;
+}
+
+.box-1{
+    background-color: #A2D39B;
+}
+.box-2{
+    background-color:#610A2B;
+}
+.box-3{
+    background-color:#0193CE;
+}
+.box-4{
+    background-color:#FF261C;
+}
+.box-5{
+    background-color:#D51E1E;
+}
+.box-6{
+    background-color:#B4D0E7;
+}
+.box-7{
+    background-color:#0D2481;
+}
+.box-8{
+    background-color:#FFD830;
+}
+
+
 /*-------------------------FOOTER*/
