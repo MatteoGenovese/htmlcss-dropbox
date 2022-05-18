@@ -4,25 +4,30 @@
     margin: 0;
     padding: 0%;
     box-sizing: border-box;
+    font-family: 'Roboto Flex', sans-serif;
+    color: rgba(0, 0, 0, 0.6);
 }
 
 a {
     text-decoration: none;
-    color: black;
-
 }
 
 h1 {
     font-size: 4em;
     margin: 30px auto;
+    color: black;
 }
 
 h2 {
     font-size: 3em;
+    color: black;
+
 }
 
 h3 {
     font-size: 1.5em;
+    color: black;
+
 }
 
 .container {
@@ -94,16 +99,15 @@ header a {
 .white-button {
     background-color: #FFFFFF;
     display:inline;
-    border: 1px solid black;
+    border: 1px solid rgba(0, 0, 0, 0.3);
     border-radius: 1px;
-    color: black;
     padding: 5px 10px;
 }
 
 /*-------------------------MAIN*/
 /*INTRO*/
-main {
-    padding-top: 80px;
+section {
+    padding-top: 100px;
 }
 
 .intro {
@@ -200,7 +204,8 @@ main {
 
 .business-plan-vertical-box {
     min-height: 700px;
-    border: 1px solid black;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+
 }
 
 .box-container {
@@ -209,7 +214,7 @@ main {
 }
 
 .business-plan-title {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
     text-align: center;
     vertical-align: middle;
 }
@@ -226,22 +231,31 @@ main {
     margin: 0 auto;
 }
 
-.user-quantity::before {
+.list-icon::before{
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    margin-right: 5px;
+}
+
+.list-icon.user::before{
     content: '\f007 ';
 }
 
-.memory-storage::before {
+.list-icon.memory::before{
     content: '\f07b ';
 }
 
-.added-functions::before {
-    content: '\f1e0 ';
+.list-icon.functions::before{
+        content: '\f1e0 ';
+}
+.list-icon.check::before{
+    content: '\f00c ';
 }
 
 .business-plan-horizontal-box {
     height: 200px;
     margin: 20px 10px;
-    border: 1px solid black;
+    border: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 .center{
@@ -259,6 +273,10 @@ main {
 .columns-div-x2{
     width: 50%;
     margin: 0 10px;
+}
+.columns-div-x5{
+    width: calc( 100% / 5 - 20px * 2);
+    margin: 0 20px;
 }
 .drop-box-partner img {
     width: 100%;
@@ -331,7 +349,12 @@ main {
 }
 .faq-box div:first-child{
     border-top: 1px solid black;
-
 }
 
 /*-------------------------FOOTER*/
+footer{
+    background-color: black;
+}
+footer li,footer div,footer h4{
+    color: white;
+}
