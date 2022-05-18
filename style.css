@@ -6,35 +6,46 @@
     box-sizing: border-box;
     font-family: 'Roboto Flex', sans-serif;
     color: rgba(0, 0, 0, 0.6);
+    font-weight: 200;
 }
 
 a {
     text-decoration: none;
 }
 
-h1 {
-    font-size: 4em;
-    margin: 30px auto;
+
+
+h1, h2, h3 {
     color: black;
+}
+h1{
+    font-size: 4.5em;
+    margin: 30px auto;
+    font-weight: 700;
 }
 
 h2 {
-    font-size: 3em;
-    color: black;
-
+    font-size: 2em;
+    font-weight: 600;
 }
 
 h3 {
     font-size: 1.5em;
-    color: black;
-
+    font-weight: 400;
 }
 
 .container {
-    width: 800px;
+    width: 1000px;
     margin: 0 auto;
 }
+.strong{
+	font-weight: bold;
+}
 
+li{
+    list-style-type: none;
+    padding-bottom: 10px;
+}
 /*-------------------------FLEX-CLASS*/
 
 .flex-container-h{
@@ -57,18 +68,30 @@ h3 {
     align-content: center;
     align-items: center;
 }
-.flex-end{
-    justify-content: flex-end;
+
+.flex-start{
+    justify-content: flex-start;
 }
 .flex-center{
     justify-content:center;
 }
+.flex-end{
+    justify-content: flex-end;
+}
+.align{
+    align-items: flex-end;
+}
+
 .flex-wrap{
     flex-wrap: wrap;
 }
 
 .vertical-center{
     vertical-align: middle;
+}
+
+.flex-grow-2{
+    flex-grow: 2;
 }
 
 
@@ -107,7 +130,10 @@ header a {
 /*-------------------------MAIN*/
 /*INTRO*/
 section {
-    padding-top: 100px;
+    padding-top: 80px;
+}
+section:last-child {
+    padding-bottom: 80px;
 }
 
 .intro {
@@ -115,7 +141,7 @@ section {
 }
 
 .intro-container {
-    width: 1000px;
+    width: 1200px;
     margin: 0 auto;
 }
 
@@ -138,8 +164,10 @@ section {
     width: 100%;
 }
 
-.arrow {
-    font-size: 72px;
+.arrow i{
+    font-size: 36px;
+    color: black;
+    padding-bottom: 20px;
 }
 
 /*BUSINESS-OPPORTUNITY*/
@@ -158,7 +186,7 @@ section {
     height: 20px;
     width: 20px;
     border-radius: 50%;
-    border: 1px solid black;
+    border: 1px solid rgba(0, 0, 0, 0.3);
     display: inline-block;
     vertical-align: middle;
 }
@@ -167,7 +195,7 @@ section {
     height: 20px;
     width: 20px;
     border-radius: 50%;
-    border: 1px solid black;
+    border: 1px solid rgba(0, 0, 0, 0.3);
     display: inline-block;
     vertical-align: middle;
 
@@ -203,13 +231,11 @@ section {
 }
 
 .business-plan-vertical-box {
-    min-height: 700px;
     border: 1px solid rgba(0, 0, 0, 0.3);
-
 }
 
 .box-container {
-    width: 90%;
+    width: calc( 100% - 20px );
     margin: 0 auto;
 }
 .container-80{
@@ -221,14 +247,12 @@ section {
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
     text-align: center;
     vertical-align: middle;
+    padding: 10px 0;
 }
+
 
 .business-plan-vertical-box div {
     flex-grow: 1;
-}
-
-.specification div {
-    margin-top: 16px;
 }
 
 .day-of-trial {
@@ -257,7 +281,6 @@ section {
 }
 
 .business-plan-horizontal-box {
-    height: 200px;
     margin: 20px 10px;
     border: 1px solid rgba(0, 0, 0, 0.3);
 }
@@ -271,17 +294,30 @@ section {
     margin: 0 10px;
 }
 .columns-div-x1{
-    width: 100%;
+    width: calc( 100% / 1 - 10px * 2);
     margin: 0 10px;
 }
 .columns-div-x2{
-    width: 50%;
+    width: calc( 100% / 2 - 10px * 2);
     margin: 0 10px;
 }
 .columns-div-x5{
     width: calc( 100% / 5 - 20px * 2);
-    margin: 0 20px;
+    margin: 0 10px;
 }
+.columns-div-2on3{
+    width: calc( ( 100% / 3 - 20px * 2 ) * 2 );
+    margin: 0 10px;
+}
+.columns-div-1on3{
+    width: calc( ( 100% / 3 - 20px * 2 ) * 1 );
+    margin: 0 10px;
+}
+
+.business-plan-vertical-box :last-child{
+    padding-bottom: 20px;
+}
+
 .drop-box-partner img {
     width: 100%;
 }
@@ -364,21 +400,38 @@ section {
 .row-gap-0{
     row-gap: 0px;
 }
-.faq-questions{
+.faq-question{
     height: calc( 100vw / 18 );
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
-.faq-box div:first-child{
-    border-top: 1px solid black;
+.faq-box .faq-question:first-child{
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
 }
 .high-attention h2{
     color: #58132B;
 }
+.arrow-expand{
+
+}
 
 /*-------------------------FOOTER*/
 footer{
+    padding: 50px 0;
     background-color: black;
 }
 footer li,footer div,footer h4{
     color: white;
+}
+.footer-list{
+    padding: 20px 0;
+}
+.Footer-lingua{
+    margin: 20px auto;
+
+}
+.lingua{
+    margin: 20px auto;
+}
+.lingua i{
+    color: #758185;
 }
