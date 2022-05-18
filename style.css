@@ -212,6 +212,10 @@ section {
     width: 90%;
     margin: 0 auto;
 }
+.container-80{
+    width: 80%;
+    margin: 10% auto;
+}
 
 .business-plan-title {
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
@@ -285,6 +289,9 @@ section {
 .operations-vertical-box div {
     flex-grow: 1;
 }
+.flex-grow-0{
+    flex-grow: 0;
+}
 
 .operations-img img{
     width: 100%;
@@ -293,12 +300,26 @@ section {
 .little-box{
     width: calc( 100% / 2 );
     height: calc( 100% / 2 );
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+.little-box:hover{
+    border: 10px solid rgba(255, 255, 255, 0.6);
+}
+.little-box img{
+    height: calc( 100vw / 12 );
+    width: calc( 100vw / 12 );
+    filter: invert(100%)
 }
 .central-customer, .side-customers{
     width: calc( 100% / 3 );
     height: calc( 100vw / 3 );
     background-color: #F5F5F5;
-
+}
+.central-customer-logo img{
+    width: 50%;
 }
 .customer{
     row-gap: 0px;
@@ -349,6 +370,9 @@ section {
 }
 .faq-box div:first-child{
     border-top: 1px solid black;
+}
+.high-attention h2{
+    color: #58132B;
 }
 
 /*-------------------------FOOTER*/
